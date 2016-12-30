@@ -1,0 +1,25 @@
+{
+  "name": "node-mulit-process-service",
+  "version": "1.1.0",
+  "description": "A prototype for buildin a node web api with hapi.js and Azure Service Bus:  Based off of:  https://github.com/RisingStack/multi-process-nodejs-example",
+  "main": "server.js",
+  "scripts": {
+    "start": "node .",
+    "start:prod": "NODE_ENV=production PROCESS_TYPE=web-api npm start",
+    "start:dev": "NODE_ENV=development PROCESS_TYPE=web-api npm start"
+  },
+  "engines": {
+    "node": "6.6.0"
+  },
+  "author": "yannify",
+  "license": "ISC",
+  "dependencies": {
+    "azure": "1.2.0-preview",
+    "dotenv": "2.0.0",
+    "es6-promisify": "5.0.0",
+    "joi": "10.1.0",
+    "raygun": "0.9.0",
+    "winston": "2.3.0"
+  },
+  "devDependencies": {}
+}
